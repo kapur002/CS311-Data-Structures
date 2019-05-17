@@ -1,0 +1,114 @@
+Script started on Fri 13 Oct 2017 08:21:03 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ g++ llist.cpp client_Linkedlist.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ ./a.out
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>1
+CASE 1:------------------- 
+1 CHECK IF EMPTY
+List is Empty
+2 DISPLAY LIST
+[ empty ]
+3 ADD REAR (1, 2, 3, 4)
+4 DISPLAY LIST
+[1] [2] [3] [4] 
+5 DELETE FRONT TWICE
+Deleted: 1 2
+6 DISPLAY LIST
+[3] [4] 
+7 CHECK IF EMPTY
+List is not Empty
+8 DELETE REAR TWICE
+Deleted: 4 3
+9 CHECK IF EMPTY
+List is Empty
+Calling the llist deconstructor
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>^[[A    2
+Case 2: -----------------------
+1 ADD FRONT (5)
+2 ADD FRONT (4)
+3 DELETE FRONT
+4 ADD REAR (6, 8, 9)
+5 DISPLAY LIST
+[5] [6] [8] [9] 
+6 ADD BEFORE 1ST ELEM (4)
+7 ADD BEFORE 4TH ELEM (7)
+8 ADD BEFORE 7TH ELEM (10)
+9 ADD BEFORE 9TH ELEM (12)
+ERROR: Out of range
+10 ADD BEFORE 0TH ELEM (0)
+ERROR: Out of range
+11 DISPLAY LIST
+[4] [5] [6] [8] [7] [9] [10] 
+12 DELETE 1ST ELEM
+Deleted: 4
+13 DELETE 6TH ELEM
+Deleted: 10
+14 DELETE 3RD ELEM
+Deleted: 7
+15 DELETE 5TH ELEM
+ERROR: Out of range
+16 DELETE 0TH ELEM
+ERROR: Out of range
+17 DISPLAY LIST
+[5] [6] [8] [9] 
+18 DELETE FROM REAR UNTIL EMPTY
+Deleted: 9
+Deleted: 8
+Deleted: 6
+Deleted: 5
+19 DISPLAY LIST
+[ empty ]
+Calling the llist deconstructor
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>3
+Case 3:-------------------- 
+1 ADD BEFORE 0TH ELEM
+ERROR: Out of range
+2 DELETE FRONT
+ERROR: Underflow
+Calling the llist deconstructor
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>4
+Case 4:------------------------ 
+1 DELETE 2ND ELEM
+ERROR: Out of range
+2 DELETE REAR
+ERROR: Underflow
+Calling the llist deconstructor
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+   (4) Case 4 
+    Enter ( 0 ) to quit 
+===>0
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ exit
+
+Script done on Fri 13 Oct 2017 08:23:10 PM PDT

@@ -1,0 +1,790 @@
+Script started on Sat 21 Oct 2017 03:54:19 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ logoutg++ slist.cpp llist.cpp HW3P3client.cpp
+HW3P3client.cpp: In function ‘int main()’:
+HW3P3client.cpp:54:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L1: ")) << L1.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:54:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:54:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:62:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L1: ")) << L1.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:62:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:62:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:72:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L2: ")) << L2.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:72:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:72:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:78:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L2: ")) << L2.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:78:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:78:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:84:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L1: ")) << L1.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:84:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:84:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:87:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L1: ")) << L1.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:87:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:87:35: note:   cannot convert ‘L1.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+HW3P3client.cpp:90:35: error: no match for ‘operator<<’ in ‘std::operator<< <std::char_traits<char> >((* & std::cout), ((const char*)"L2: ")) << L2.slist::<anonymous>.llist::displayAll()’
+HW3P3client.cpp:90:35: note: candidates are:
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:106:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:115:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:125:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:164:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:168:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:172:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:179:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:190:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:199:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:203:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:218:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:222:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:230:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:243:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/locale_classes.h:42,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ios_base.h:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ios:43,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:40,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2750:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:469:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:474:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:480:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:486:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘signed char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:491:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘unsigned char’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:511:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   mismatched types ‘const _CharT*’ and ‘void’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:607:0,
+                 from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/ostream.tcc:323:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:528:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:541:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const signed char*’
+In file included from /opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/iostream:40:0,
+                 from HW3P3client.cpp:14:
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/opt/rh/devtoolset-1.1/root/usr/lib/gcc/i386-redhat-linux/4.7.2/../../../../include/c++/4.7.2/ostream:546:5: note:   template argument deduction/substitution failed:
+HW3P3client.cpp:90:35: note:   cannot convert ‘L2.slist::<anonymous>.llist::displayAll()’ (type ‘void’) to type ‘const unsigned char*’
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ exit
+
+Script done on Sat 21 Oct 2017 03:54:38 PM PDT

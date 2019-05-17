@@ -1,0 +1,62 @@
+Script started on Fri 15 Sep 2017 07:01:28 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW1[kapur002@empress forHW1]$ g++ q[Kqueue.cpp queue[K[K[K[K[Kclient.2cpp[K[K[K[K[K2.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW1[kapur002@empress forHW1]$ ./a.out
+[ front->[A B C]<-rear
+-----------------------------------------------------------------------------------------------
+ ]
+A
+
+COUNT: 5
+front->[B C AA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+B
+
+COUNT: 7
+front->[C AA BB CC BA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+C
+
+COUNT: 9
+front->[AA BB CC BA BB CC CA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+AA
+
+COUNT: 11
+front->[BB CC BA BB CC CA BB CC AAA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+BB
+
+COUNT: 13
+front->[CC BA BB CC CA BB CC AAA BB CC BBA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+CC
+
+COUNT: 15
+front->[BA BB CC CA BB CC AAA BB CC BBA BB CC CCA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+BA
+
+COUNT: 17
+front->[BB CC CA BB CC AAA BB CC BBA BB CC CCA BB CC BAA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+BB
+
+COUNT: 19
+front->[CC CA BB CC AAA BB CC BBA BB CC CCA BB CC BAA BB CC BBA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+CC
+
+COUNT: 21
+front->[CA BB CC AAA BB CC BBA BB CC CCA BB CC BAA BB CC BBA BB CC CCA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+CA
+
+COUNT: 23
+front->[BB CC AAA BB CC BBA BB CC CCA BB CC BAA BB CC BBA BB CC CCA BB CC CAA BB CC]<-rear
+-----------------------------------------------------------------------------------------------
+BB
+ERROR: THE QUEUE IS FULL!
+sh: PAUSE: command not found
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW1[kapur002@empress forHW1]$ exit
+
+Script done on Fri 15 Sep 2017 07:01:57 PM PDT

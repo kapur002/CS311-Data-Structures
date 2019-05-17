@@ -1,0 +1,32 @@
+Script started on Sat 21 Oct 2017 05:19:07 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ logoutg++ llist.cpp slist.cpp HW3P3client.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ g++ llist.cpp slist.cpp HW3P3client.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogout[Kg++ llist.cpp slist.cpp HW3P3client.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd forHW3[K[K[K[K[K[K[K[K[K./a.out
+1
+[1] [2] [3] [4] [5] 
+2
+in copy test
+[1] [2] [3] [4] [5] [6] 
+finished
+Calling the llist deconstructor-- After copytest --- 
+3
+[1] [2] [3] [4] [5] 
+-- Testing operator overloading ---
+4
+5
+[1] [2] [3] [4] [5] 
+6
+7
+[7] [8] [9] [10] 
+8
+9
+[1] [2] [3] [4] [5] 
+10
+11
+[1] [2] [3] [4] 
+12
+[1] [2] [3] [4] 
+13
+[1] [2] [3] [4] [5] 
+Calling the llist deconstructorCalling the llist deconstructor]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ exit
+
+Script done on Sat 21 Oct 2017 05:19:22 PM PDT

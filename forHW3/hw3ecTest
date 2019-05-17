@@ -1,0 +1,13 @@
+Script started on Sat 21 Oct 2017 06:06:44 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ ./a.outg++ llist.cpp slist.cpp hw3ec.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ g++ llist.cpp slist.cpp hw3ec.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[K
+1 L1 is empty and L2 is empty			True
+2 L1 is empty and L2 has 2 elements		False
+3 L1 has 2 elements and L2 is empty		False
+4 L1 has 1, 2, 3 and L2 has 1, 2, 3		True
+5 L1 has 1,2,3 and L2 has 1,2			False
+6 L1 has 1, 2, 3 and L2 has 1, 2, 3, 4		False
+7 L1 has 1, 2, 3 and L2 has 1, 2, 4		False
+Calling the llist deconstructorCalling the llist deconstructor]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ exit
+
+Script done on Sat 21 Oct 2017 06:06:55 PM PDT

@@ -1,0 +1,229 @@
+//
+//  queue.cpp
+//  Queue
+//
+//  Created by Parth Kapur on 9/14/17.
+//  Copyright © 2017 Parth Kapur. All rights reserved.
+//
+
+//INSTRUCTION
+//Look for **
+//Fill in the function body
+//When done, compile queue.cpp to make sure it has no syntax errors
+
+//=========================================================
+//HW#: HW1P1 queue
+//Your name: Parth Kapur
+//Complier:  g++
+//File type: queue.cpp
+//===========================================================
+
+#ifndef "queue.h"
+#define "queue.h"
+
+#endif
+using namespace std;
+#include <iostream>
+
+// constructor
+queue::queue()
+{
+    // Since we are initializing the queue, the front of the queue should be 0.
+    front = 0;
+    // Likewise, since we are initializing the queue, the count of the queue should be 0 since there are
+    // no elements in it.
+    count = 0;
+    // The rear should be -1, as it should always be behind the initial starting position, which in this case is
+    // 0, since we are initializing the queue.
+    rear = -1;
+}
+
+//destructor
+queue::~queue()
+{
+    // Nothing to do - memory will automatically be deallocated.
+}
+
+// PURPOSE: returns true if queue is empty, otherwise false
+bool queue::isEmpty()
+{
+    if (front == 0 && rear == -1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+// PURPOSE: returns true if queue is full, otherwise false
+bool queue::isFull()
+{
+    if (count > MAX_SIZE)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+// PURPOSE: if full, throws an exception Overflow
+// if not full, enters an element at the rear
+// PAREMETER: provide the element (newElem) to be added
+void queue::add(el_t newElem)
+{
+    if (isFull()) // If it is full, we want to throw an exception called overFlow
+    {
+        throw overFlow();
+    }
+    
+    else if (isEmpty()) // If it is empty, we want to add the very first element into the queue.
+    {
+        // Since the queue is empty, the very first position is also the front position.
+        // Thus, we will specify the index of el[] array as front for the index. In that position, we will insert the value
+        // contained in variable newElem.
+        el[front] = newElem;
+        // We then want to move the rear up 1, because now the the array is not empty. Therefore, rear will be 0.
+        rear++;
+        // We want to increment count, because we have added an element into the queue;
+        count++;
+        
+    }
+    else
+    {
+        rear = (rear + 1) % MAX_SIZE; // Why this formula? Well, we want the rear to increase.
+        
+        /* However, in the event that the queue becomes full, the rear should be reset.
+         Thus, the queue, in a way is circular (where the front and the tail meet).
+         So, for example, if the MAX_SIZE is 9...and the previous rear value was 8
+         Plugging into the formula: (8 + 1) % MAX_SIZE would get us 0. */
+        el[rear] = newElem;
+        count++;
+    }
+    
+}
+
+// PURPOSE: if empty, throw Underflow
+// if not empty, removes the front element to give it back
+// PARAMETER: provide a holder (removedElem) for the element removed (pass by ref)
+void queue::remove(el_t& removedElem)
+{
+    
+    // If the queue is empty, we will throw underFlow. After all, we do not want to attempt deleting from an empty queue.
+    if (isEmpty())
+    {
+        throw underFlow();
+    }
+    
+    else
+    {
+        // removedElem will serve as a holder for the element removed.
+        removedElem = el[front];
+        cout << "Removed Elem: " << removedElem << endl;
+        // We want to clear the original position by representing it with empty quotes, else the already deleted character will hang around in the buffer
+        el[front] = " ";
+        // Why this algorithm, you ask?
+        /*
+         It is the same concept as moving the rear in the add function. We want to move the front up, thereby
+         "erasing" the content of what is currently the front of the line. We include % MAX_SIZE because
+         a queue based array is circular (the end will meet the beginning), so front will only be 0 when front + 1 == MAX_SIZE.
+         */
+        front = ((front + 1) % MAX_SIZE);
+        count--;
+    }
+}
+
+// PURPOSE: if empty, throws an exception Underflow
+// if not empty, give back the front element (but does not remove it)
+//PARAMETER: provide a holder (theElem) for the element (pass by ref)
+void queue::frontElem(el_t& theElem)
+{
+    if (isEmpty())
+    {
+        throw underFlow();
+    }
+    else if (!isEmpty())
+    {
+        // Notice that since the function is void, we cannot return a data type. Therefore, we can return data
+        // by using a pass-by-reference. Remember, that pass-by-reference can return data because whatever is changed
+        // on the pass-by-reference, will also reflect in the variable that is used in the main program function call.
+        theElem = el[front];
+    }
+}
+
+// PURPOSE: returns the current size to make it
+// accessible to the client caller
+int queue::getSize()
+{
+    // Notice that in this function, we want to return the CURRENT size of the queue, not the MAXIMUM SIZE
+    // Remember that we have been incrementing and decrementing an integer variable called count in the add
+    // and remove functions. So, since this function is int data return type, all we need to do is return count.
+    // This will work because count is also an integer based variable.
+    
+    return count;
+}
+
+// PURPOSE: display everything in the queue horizontally from front to rear
+// enclosed in []
+// if empty, displays [ empty ]
+void queue::displayAll()
+{
+    // If the queue is empty, we will display a string showing that the queue is empty.
+    if (isEmpty())
+    {
+        cout << "[ empty ]" << endl;
+        return;
+    }
+    // In the event the size of the array is 1, then all we need to do is display the front.
+    
+    if (count == 1)
+    {
+        cout << "[ " << el[front] << " ]";
+        return;
+    }
+    // We are creating a for loop to go through the queue. i is initialized as 1, because we have already accounting for
+    // the front in the previous else if statement. We want to stop running the loop once it reaches the end, hence
+    // count - 2. We want to indicate what the rear is specifically, for ease of readability, so that is why it is
+    // count - 2 instead of count - 1.
+    
+    cout << endl;
+    cout << "[ ";
+    for (int i = 0; i < MAX_SIZE - 3; i++)
+    {
+        cout << el[i % MAX_SIZE] << " ";
+    }
+    
+    cout << "] <--------rear" << endl;
+    cout << "--------------------------" << endl;
+}
+
+// PURPOSE: if empty, throws an exception Underflow
+//if queue has just 1 element, does nothing
+//if queue has more than 1 element, moves the front one to the rear by
+//doing remove followed by add.
+void queue::goToBack()
+{// ** comment a local variable
+    
+    // If the queue is empty, throw underFlow exception.
+    if (isEmpty())
+    {
+        throw underFlow();
+    }
+    
+    // No need to go to the back if the front and the rear are the same.
+    if (count == 1)
+    {
+        return;
+    }
+    
+    //
+    if (count > 1)
+    {
+        el_t newElem;
+        remove(newElem);
+        add(newElem);
+    }
+}

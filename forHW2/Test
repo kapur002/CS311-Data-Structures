@@ -1,0 +1,100 @@
+Script started on Fri 29 Sep 2017 02:20:32 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ g++ combine.c[[[K[Kpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ ./a.out
+Please enter the size of Vector 1: 3
+Please type in integers in increasing order into L1 Vector.
+ - element 1: 1
+ - element 2: 2
+ - element 3: 3
+Contents of Vector 1: [1 2 3 ]
+
+Please enter the size of Vector 2: 3
+Please type in integers in increasing order into L2 Vector.
+ - element 1: 4
+ - element 2: 5
+ - element 3: 6
+Contents of Vector 2: [4 5 6 ]
+
+Now we will combine both Vector 1 (L1) and Vector 2 (L2)! 
+ - comparison!
+ - comparison!
+ - comparison!
+This is the result of Vector 3, which is a combination of Vector 1 (L1) and Vector 2 (L2)! 
+[1 2 3 4 5 6 ]
+sh: PAUSE: command not found
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ ./a.out
+Please enter the size of Vector 1: 3
+Please type in integers in increasing order into L1 Vector.
+ - element 1: 1
+ - element 2: 3
+ - element 3: 5
+Contents of Vector 1: [1 3 5 ]
+
+Please enter the size of Vector 2: 3
+Please type in integers in increasing order into L2 Vector.
+ - element 1: 2
+ - element 2: 4
+ - element 3: 6
+Contents of Vector 2: [2 4 6 ]
+
+Now we will combine both Vector 1 (L1) and Vector 2 (L2)! 
+ - comparison!
+ - comparison!
+ - comparison!
+ - comparison!
+ - comparison!
+This is the result of Vector 3, which is a combination of Vector 1 (L1) and Vector 2 (L2)! 
+[1 2 3 4 5 6 ]
+sh: PAUSE: command not found
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ ./a.out
+Please enter the size of Vector 1: 3
+Please type in integers in increasing order into L1 Vector.
+ - element 1: 4
+ - element 2: 5
+ - element 3: 6
+Contents of Vector 1: [4 5 6 ]
+
+Please enter the size of Vector 2: 3
+Please type in integers in increasing order into L2 Vector.
+ - element 1: 1
+ - element 2: 2
+ - element 3: 3
+Contents of Vector 2: [1 2 3 ]
+
+Now we will combine both Vector 1 (L1) and Vector 2 (L2)! 
+ - comparison!
+ - comparison!
+ - comparison!
+This is the result of Vector 3, which is a combination of Vector 1 (L1) and Vector 2 (L2)! 
+[1 2 3 4 5 6 ]
+sh: PAUSE: command not found
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ ./a.out
+Please enter the size of Vector 1: 5 4
+Please type in integers in increasing order into L1 Vector.
+ - element 1: 1
+ - element 2: 2
+ - element 3: 5
+ - element 4: 6
+Contents of Vector 1: [1 2 5 6 ]
+
+Please enter the size of Vector 2: 5 4
+Please type in integers in increasing order into L2 Vector.
+ - element 1: 3
+ - element 2: 4
+ - element 3: 7
+ - element 4: 8
+Contents of Vector 2: [3 4 7 8 ]
+
+Now we will combine both Vector 1 (L1) and Vector 2 (L2)! 
+ - comparison!
+ - comparison!
+ - comparison!
+ - comparison!
+ - comparison!
+ - comparison!
+This is the result of Vector 3, which is a combination of Vector 1 (L1) and Vector 2 (L2)! 
+[1 2 3 4 5 6 7 8 ]
+sh: PAUSE: command not found
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW2[kapur002@empress forHW2]$ exit
+
+Script done on Fri 29 Sep 2017 02:22:14 PM PDT

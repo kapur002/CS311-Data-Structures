@@ -1,0 +1,22 @@
+Script started on Tue 17 Oct 2017 08:36:52 PM PDT
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ g++ Hw[KW3p[KP2.[Kclient.cpp llist.cpp slist.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ ./a.out
+Calling the llist deconstructor1
+2
+3
+[4] [6] [7] [8] 
+4
+Result was found in: 2
+5
+The List is Now Updated:[4] [0] [7] [8] 
+6
+7
+8
+The List is Now Updated:[4] [0] [7] [2] 
+9
+ERROR: 5 is not found in the list10
+Replace 7th position with the 10th position
+ERROR: Bad position was given
+Calling the llist deconstructor]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW3[kapur002@empress forHW3]$ exit
+
+Script done on Tue 17 Oct 2017 08:37:15 PM PDT

@@ -1,0 +1,92 @@
+// ====   For the HW6 Client file ====================================
+//INSTRUCTION: Complete this file and comment using How to Comment file.
+
+#include "dgraph.h"
+
+int main()
+{
+    
+    /*
+  0.Declare table object
+  1.fillTable()
+  2.displayGraph()
+  while (the user does not want to stop)
+    a.the user will specify which vertex     
+    b.findOutDegree of the vertex and display the result
+    c.catch exception but do not exit
+
+  while (the user does not want to stop)
+    a.the user will specify which vertex
+    b.findAdjacency of the vertex and display the result (see Hint)
+    c.catch exception but do not exit
+     */
+    
+    int c = 1;
+    slist edges;
+    
+    cout << c << ":DECLARE TABLE OBJECT\n"; c++;
+    dgraph graphObj; //0.Declare table object
+    
+    
+    cout << c << ":FILL THE TABLE\n"; c++;
+    graphObj.fillTable();  // 1.fillTable()
+    
+    cout << c << ":DISPLAY GRAPH \n"; c++;
+    graphObj.displayGraph(); // 2.displayGraph()
+    
+    cout << "while (the user does not want to stop)\n"
+    << "a.the user will specify which vertex\n"
+    << "b.findOutDegree of the vertex and display the result\n"
+    << "c.catch exception but do not exit\n\n\n";
+    
+    char findV; // User input
+    while (findV != 'z'){
+        cout << "Type in a char to find out value ( z to exit ): ";
+        cin >> findV;
+        
+        if (findV == 'z'){
+            break;
+        }
+        
+        try{
+            int outdeg = graphObj.findOutDegree(findV);
+        }
+        catch(dgraph::BadVertex){
+            cout << "Bad Vertex" << endl;
+        }
+    }
+    findV = ' ';
+    
+    cout << "while (the user does not want to stop)\n"
+    <<"a.the user will specify which vertex\n"
+    <<"b.findAdjacency of the vertex and display the result (see Hint)\n"
+    <<"c.catch exception but do not exit\n\n\n";
+    
+    while (findV != 'z'){
+        
+        cout << "Type in a char to get the slist ( z to exit ): ";
+        cin >> findV;
+        
+        if (findV == 'z'){
+            break;
+        }//end while
+        
+        try{
+            edges = graphObj.findAdjacency(findV);
+            edges.displayAll();
+        }
+        catch(dgraph::BadVertex){
+            cout << "Bad Vertex" << endl;
+        }
+    }
+ 
+}
+
+
+ /*
+Hint:
+  slist l1;
+  l1 = G.findAdjacency('a');
+  // how do you display l1?  Hint: it is an slist from HW3.
+
+*/
