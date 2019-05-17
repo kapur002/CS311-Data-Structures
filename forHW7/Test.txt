@@ -1,0 +1,51 @@
+Script started on Fri 01 Dec 2017 08:52:20 PM PST
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ clear./a.outg++ dgraph.cpp HW7Client.cpp llist.cpp slist.cpp stackk.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ g++ dgraph.cpp HW7Client.cpp llist.cpp slist.cpp stackk.cpp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out
+Vertex         OutDegree      Adjacent       
+A              
+2              0           
+The List: 
+B F 
+B              
+2              0           
+The List: 
+C G 
+C              
+1              0           
+The List: 
+H 
+D              
+0              0           
+[ empty ]
+
+E              
+0              0           
+[ empty ]
+
+F              
+2              0           
+The List: 
+I E 
+G              
+0              0           
+[ empty ]
+
+H              
+2              0           
+The List: 
+G I 
+I              
+3              0           
+The List: 
+A G E 
+
+Calling llist destructor
+B
+F
+--------------
+B is now removed from stack.
+Segmentation fault
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ exit
+
+Script done on Fri 01 Dec 2017 08:52:31 PM PST

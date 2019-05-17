@@ -1,0 +1,131 @@
+Script started on Fri 01 Dec 2017 06:56:59 PM PST
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ ./a.outg++ stack.cpp llist.cpp slist.cpp dgraph.cpp HW7Clientt.cpp
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ g++ stack.cpp llist.cpp slist.cpp dgraph.cpp HW7Clientt.cpp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Vertex         OutDegree      Adjacent       
+A              
+2              
+The List:     
+B F 
+B              
+2              
+The List:     
+C G 
+C              
+1              
+The List:     
+H 
+D              
+0              
+[ empty ]     
+
+E              
+0              
+[ empty ]     
+
+F              
+2              
+The List:     
+I E 
+G              
+0              
+[ empty ]     
+
+H              
+2              
+The List:     
+G I 
+I              
+3              
+The List:     
+A G E 
+Visiting vertex A.
+
+Calling llist destructor
+Pushing 
+The List: 
+B F Updated graph: 
+Vertex         OutDegree      Adjacent       
+A              
+2              
+The List:     
+B F 
+B              
+2              
+The List:     
+C G 
+C              
+1              
+The List:     
+H 
+D              
+0              
+[ empty ]     
+
+E              
+0              
+[ empty ]     
+
+F              
+2              
+The List:     
+I E 
+G              
+0              
+[ empty ]     
+
+H              
+2              
+The List:     
+G I 
+I              
+3              
+The List:     
+A G E 
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+
+Calling llist destructor
+]0;kapur002@empress:~/cs311files/CS311Progs/HWPrograms/forHW7[kapur002@empress forHW7]$ exit
+
+Script done on Fri 01 Dec 2017 06:57:06 PM PST
